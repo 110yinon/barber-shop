@@ -1,10 +1,13 @@
 /* variables */
 :root{
-    --primary:#ecd862
+    --brightFont:#FEFEF5;
+    --bgColor:#A9A6A6;
+    --FooterBgColor:#383838;
+
 }
 
 /* reset */
-body,p,a,ul,li{
+body,p,a,ul,li,h1,h3{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -15,18 +18,61 @@ li{
 
 /* base styles */
 body{
-    background-color: var(--primary);
-}
 
+}
+.header{
+    background-image:url('./assets/backgroundDark.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+h1,h3,p,.facebook,.instagram,.call{
+    color: var(--brightFont);
+}
 
 /* fonts */
 /* @font-face {
     font-family: myFirstFont;
     src: url(assets/fonts/fontName.ttf);
   } */
+  @import url('https://fonts.googleapis.com/css?family=Calligraffitti&display=swap');
+  h1,h3{
+    font-family: 'Calligraffitti', cursive;
+  }
+
 
 /* mobile styles */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    row-gap: 1.2em;
+    /* grid-template-rows: repeat(6,1fr); */
+}
+.full-name{
+    font-size: 1.7em;
+    grid-column: 5/span 4;
+    grid-row: 2;
 
+}
+.barber-shop{
+    font-size: 1.8em;
+    grid-column: 5/span 4;
+    grid-row: 3;
+}
+.facebook,.instagram,.call,.phone{
+    grid-row: 4;
+}
+.facebook,.instagram,.call{
+    width:2em;
+    height:2em;
+}
+.phone{
+    font-size: 1.3em;
+    grid-column: 9/ 13;
+}
+.call{
+    grid-column: 8;
+}
 /* small tablet styles */
 @media screen and (min-width:480px){
 

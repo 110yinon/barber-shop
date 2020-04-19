@@ -3,11 +3,11 @@ import aboutPic from '../assets/about.png'
 
 const Main = () => {
     return (
-        <div className="main">
+        <div className="main grid">
             <h2 className="title">נעים להכיר - יוסי יקיר</h2>
             <img src={aboutPic} alt="about-pic" className="about-pic" />
             <p className="about-context">
-                עם ותק של מעל 10 שנים בתחום,<br />
+                עם ותק של מעל 10 שנים בתחום<br />
                 המומחיות שלי היא עיצוב זקנים<br />
                 ותספורות לגברים<br />
                 <br />

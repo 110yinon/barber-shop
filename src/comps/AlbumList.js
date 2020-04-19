@@ -4,7 +4,7 @@ import kidsplayground from '../assets/kidsplayground.jpg'
 
 const AlbumList = () => {
     return (
-        <div className="album-list">
+        <div className="album-list grid">
             <img src={shop} alt="shop"/>
             <img src={kidsplayground} alt="kids plygrnd"/>
             <img src={require('../assets/hair7.jpg')} alt="hair7"/>

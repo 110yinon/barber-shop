@@ -7,7 +7,7 @@
 }
 
 /* reset */
-body,p,a,ul,li,h1,h3{
+body,p,a,ul,li,h1,h2,h3{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -26,19 +26,46 @@ body{
     background-size: 100% auto;
     background-position: center;
 }
-h1,h3,p,.facebook,.instagram,.call{
+h1,h2,h3,p,.facebook,.instagram,.call{
     color: var(--brightFont);
 }
-
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 1.5em;
+    grid-column: 2/12;
+    box-shadow: 0px 10px 20px black
+}
+.footer{
+    background-color: var(--FooterBgColor);
+}
+.album-list{
+    margin: 20px 0;
+}
+.about-context{
+    margin-bottom: 20px
+}
+.footer{
+    padding:20px 5px;
+}
+h1,h2,h3,p{
+    text-align: center;
+}
 /* fonts */
 /* @font-face {
     font-family: myFirstFont;
     src: url(assets/fonts/fontName.ttf);
   } */
-  @import url('https://fonts.googleapis.com/css?family=Calligraffitti&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Calligraffitti|Rubik:300,300i,400&display=swap');
   h1,h3{
     font-family: 'Calligraffitti', cursive;
+    font-weight: normal;
   }
+  h2,p{
+    font-family: 'Rubik';
+    font-weight: lighter;
+    font-style: italic;    
+}
 
 
 /* mobile styles */
@@ -51,13 +78,13 @@ h1,h3,p,.facebook,.instagram,.call{
     font-size: 1.9em;
     grid-column: 4/10;
     grid-row: 2;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 .barber-shop{
     font-size: 2.5em;
     grid-column: 3/11;
     grid-row: 3;
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 .facebook,.instagram,.call,.phone{
     grid-row: 4;
@@ -66,16 +93,56 @@ h1,h3,p,.facebook,.instagram,.call{
     width:1.5em;
     height:1.5em;
 }
+.facebook,.call{
+    justify-self: right;
+}
+.instagram,.phone{
+    justify-self: left;
+}
 .phone{
-    font-size: 1.2em;
+    font-size: 1.1em;
     grid-column: 8/13;
 }
 .call{
     grid-column: 7;
 }
+.main{
+    background-color: var(--bgColor);
+}
+.title{
+    font-size: 1.4em;
+    grid-column: 3/11;
+    grid-row: 2;
+}
+.about-context{
+    font-size: 1.2em;
+    grid-column: 2/12;
+    grid-row: 4;
+}
+.about-pic{
+    grid-row: 3;
+}
+.address{
+    font-size: 0.9em;
+    grid-column: 7/13;
+    grid-row: 1;
+}
+.shop-hours{
+    font-size: 0.8em;
+    grid-column: 2/6;
+    grid-row: 1;
+}
+/* standart mobile styles */
+/* @media screen and (min-width:360px){
+    body{
+        font-size: 18px;
+    }
+} */
 /* small tablet styles */
-@media screen and (min-width:480px){
-
+@media screen and (min-width:700px){
+    body{
+        font-size: 18px;
+    }
 }
 /* large tablets & laptop styles */
 @media screen and (min-width:780px){

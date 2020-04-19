@@ -46,32 +46,32 @@ h1,h3,p,.facebook,.instagram,.call{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     row-gap: 1.2em;
-    /* grid-template-rows: repeat(6,1fr); */
 }
 .full-name{
-    font-size: 1.7em;
-    grid-column: 5/span 4;
+    font-size: 1.9em;
+    grid-column: 4/10;
     grid-row: 2;
-
+    font-weight: normal;
 }
 .barber-shop{
-    font-size: 1.8em;
-    grid-column: 5/span 4;
+    font-size: 2.5em;
+    grid-column: 3/11;
     grid-row: 3;
+    font-weight: normal;
 }
 .facebook,.instagram,.call,.phone{
     grid-row: 4;
 }
 .facebook,.instagram,.call{
-    width:2em;
-    height:2em;
+    width:1.5em;
+    height:1.5em;
 }
 .phone{
-    font-size: 1.3em;
-    grid-column: 9/ 13;
+    font-size: 1.2em;
+    grid-column: 8/13;
 }
 .call{
-    grid-column: 8;
+    grid-column: 7;
 }
 /* small tablet styles */
 @media screen and (min-width:480px){

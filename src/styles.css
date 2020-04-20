@@ -29,7 +29,7 @@ body{
 h1,h2,h3,p,.facebook,.instagram,.call{
     color: var(--brightFont);
 }
-img{
+img,.about-pic{
     width: 100%;
     height: auto;
     border-radius: 1.5em;
@@ -145,8 +145,21 @@ h1,h2,h3,p{
     .main{
         grid-row: 3;
     }
+    img{
+        grid-column: span 6;
+    }
+    .tablet-gap{
+        gap: 30px;
+    }
+    .album-list{
+        margin: 30px 20px;
+    }
+    .propotion-pic{
+        height: 100%;
+        object-fit: cover;
+    }
 }
 /* large tablets & laptop styles */
-@media screen and (min-width:780px){
-
+@media screen and (min-width:1000px){
+    
 }

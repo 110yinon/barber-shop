@@ -7,7 +7,7 @@ import Footer from './comps/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App no-gap grid">
       <Header />
       <Main />
       <AlbumList />

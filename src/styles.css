@@ -40,13 +40,13 @@ img{
     background-color: var(--FooterBgColor);
 }
 .album-list{
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .about-context{
-    margin-bottom: 20px
+    padding-bottom: 20px
 }
 .footer{
-    padding:20px 5px;
+    padding:15px 5px;
 }
 h1,h2,h3,p{
     text-align: center;
@@ -73,6 +73,9 @@ h1,h2,h3,p{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     row-gap: 1.2em;
+}
+.no-gap{
+    row-gap: 0;
 }
 .full-name{
     font-size: 1.9em;
@@ -131,10 +134,16 @@ h1,h2,h3,p{
     grid-column: 2/6;
     grid-row: 1;
 }
+.header,.main,.album-list,.footer{
+    grid-column: 1/13;
+}
 /* small tablet styles */
 @media screen and (min-width:700px){
     body{
         font-size: 18px;
+    }
+    .main{
+        grid-row: 3;
     }
 }
 /* large tablets & laptop styles */

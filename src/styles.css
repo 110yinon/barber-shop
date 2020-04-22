@@ -160,7 +160,7 @@ h1,h2,h3,p{
         object-fit: cover;
     }
     .about{
-        grid-row: 2;
+        /* grid-row: 2; */
     }
 }
 /* large tablets & laptop styles */

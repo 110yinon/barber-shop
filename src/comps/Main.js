@@ -4,7 +4,7 @@ import About from './About';
 
 const Main = () => {
     return (
-        <div className="main no-gap grid">
+        <div className="main tablet-gap grid">
             <About />
             <AlbumList />
         </div>

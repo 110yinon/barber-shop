@@ -4,7 +4,7 @@ import kidsplayground from '../assets/kidsplayground.jpg'
 
 const AlbumList = () => {
     return (
-        <div className="album-list tablet-gap">
+        <div className="album-list tablet-gap grid">
             <img src={shop} alt="shop" className="pic1" />
             <img src={kidsplayground} alt="kids plygrnd" className="pic2" />
             <img src={require('../assets/hair7.jpg')} alt="hair7" className="pic3" />

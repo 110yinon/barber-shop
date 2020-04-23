@@ -18,7 +18,7 @@ li{
 
 /* base styles */
 body{
-
+    user-select: none;
 }
 .header{
     background-image:url('./assets/backgroundDark.png');
@@ -186,6 +186,12 @@ h1,h2,h3,p{
     }
     img:not(.about-pic){
         opacity: 0.5;
+        transition: transform 0.5s;
+        cursor: pointer;
+    }
+    img:not(.about-pic):hover{
+        opacity: 1;
+        transform: scale(1.05);
     }
     .about{
         grid-column: 5/9;
